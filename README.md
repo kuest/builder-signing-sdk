@@ -1,4 +1,4 @@
-# builder-signing-sdk
+# Kuest Builder Signing SDK
 
 A TypeScript SDK for creating authenticated builder headers
 
@@ -6,13 +6,13 @@ A TypeScript SDK for creating authenticated builder headers
 ## Installation
 
 ```bash
-pnpm install @polymarket/builder-signing-sdk
+pnpm install @kuestcom/builder-signing-sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { BuilderSigner } from '@polymarket/builder-signing-sdk';
+import { BuilderConfig } from '@kuestcom/builder-signing-sdk';
 
 // Create a builder config for signing
 

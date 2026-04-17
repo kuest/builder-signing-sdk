@@ -1,7 +1,15 @@
 {
-    "name": "@polymarket/builder-signing-sdk",
-    "description": "Polymarket SDK for creating builder headers",
+    "name": "@kuestcom/builder-signing-sdk",
+    "description": "Kuest SDK for creating builder headers",
     "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kuestcom/builder-signing-sdk.git"
+    },
+    "homepage": "https://github.com/kuestcom/builder-signing-sdk",
+    "bugs": {
+        "url": "https://github.com/kuestcom/builder-signing-sdk/issues"
+    },
     "contributors": [
         {
             "name": "Jonathan Amenechi",

@@ -29,10 +29,10 @@ export class BuilderSigner {
         );
 
         return {
-            POLY_BUILDER_API_KEY: this.creds.key,
-            POLY_BUILDER_PASSPHRASE: this.creds.passphrase,
-            POLY_BUILDER_SIGNATURE: builderSig,
-            POLY_BUILDER_TIMESTAMP: `${ts}`,
+            KUEST_BUILDER_API_KEY: this.creds.key,
+            KUEST_BUILDER_PASSPHRASE: this.creds.passphrase,
+            KUEST_BUILDER_SIGNATURE: builderSig,
+            KUEST_BUILDER_TIMESTAMP: `${ts}`,
         }
     }
 }

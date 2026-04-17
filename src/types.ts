@@ -24,10 +24,10 @@ export interface RemoteSignerPayload {
 }
 
 export interface BuilderHeaderPayload {
-    POLY_BUILDER_API_KEY: string;
-    POLY_BUILDER_TIMESTAMP: string;
-    POLY_BUILDER_PASSPHRASE: string;
-    POLY_BUILDER_SIGNATURE: string;
+    KUEST_BUILDER_API_KEY: string;
+    KUEST_BUILDER_TIMESTAMP: string;
+    KUEST_BUILDER_PASSPHRASE: string;
+    KUEST_BUILDER_SIGNATURE: string;
     [key: string]: string;
 }
 

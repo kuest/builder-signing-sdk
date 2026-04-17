@@ -65,19 +65,19 @@ describe("builder config", () => {
         expect(headers).not.toBeNull();
         expect(headers).toBeDefined();
         expect(Object.keys(headers).length).toBeGreaterThan(0);
-        expect(headers.POLY_BUILDER_API_KEY).toBe("019894b9-cb40-79c4-b2bd-6aecb6f8c6c5");
-        expect(headers.POLY_BUILDER_PASSPHRASE).toBe("1816e5ed89518467ffa78c65a2d6a62d240f6fd6d159cba7b2c4dc510800f75a");
-        expect(headers.POLY_BUILDER_TIMESTAMP).toBe("1758744060");
-        expect(headers.POLY_BUILDER_SIGNATURE).toBe("8xh8d0qZHhBcLLYbsKNeiOW3Z0W2N5yNEq1kCVMe5QE=");
+        expect(headers.KUEST_BUILDER_API_KEY).toBe("019894b9-cb40-79c4-b2bd-6aecb6f8c6c5");
+        expect(headers.KUEST_BUILDER_PASSPHRASE).toBe("1816e5ed89518467ffa78c65a2d6a62d240f6fd6d159cba7b2c4dc510800f75a");
+        expect(headers.KUEST_BUILDER_TIMESTAMP).toBe("1758744060");
+        expect(headers.KUEST_BUILDER_SIGNATURE).toBe("8xh8d0qZHhBcLLYbsKNeiOW3Z0W2N5yNEq1kCVMe5QE=");
     });
 
     it("generateHeaders - remote", async () => {
         const remoteSignerUrl = "http://localhost:3000/sign";
         const mockResponse: BuilderHeaderPayload = {
-            POLY_BUILDER_API_KEY: "test-api-key",
-            POLY_BUILDER_TIMESTAMP: "1758744060",
-            POLY_BUILDER_PASSPHRASE: "test-passphrase",
-            POLY_BUILDER_SIGNATURE: "test-signature"
+            KUEST_BUILDER_API_KEY: "test-api-key",
+            KUEST_BUILDER_TIMESTAMP: "1758744060",
+            KUEST_BUILDER_PASSPHRASE: "test-passphrase",
+            KUEST_BUILDER_SIGNATURE: "test-signature"
         };
 
         vi.spyOn(httpHelpers, 'post').mockResolvedValue(mockResponse);
@@ -103,10 +103,10 @@ describe("builder config", () => {
         expect(headers).not.toBeNull();
         expect(headers).toBeDefined();
         expect(headers).toEqual(mockResponse);
-        expect(headers!.POLY_BUILDER_API_KEY).toBe("test-api-key");
-        expect(headers!.POLY_BUILDER_TIMESTAMP).toBe("1758744060");
-        expect(headers!.POLY_BUILDER_PASSPHRASE).toBe("test-passphrase");
-        expect(headers!.POLY_BUILDER_SIGNATURE).toBe("test-signature");
+        expect(headers!.KUEST_BUILDER_API_KEY).toBe("test-api-key");
+        expect(headers!.KUEST_BUILDER_TIMESTAMP).toBe("1758744060");
+        expect(headers!.KUEST_BUILDER_PASSPHRASE).toBe("test-passphrase");
+        expect(headers!.KUEST_BUILDER_SIGNATURE).toBe("test-signature");
     });
 
 });
