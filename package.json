@@ -1,7 +1,7 @@
 {
     "name": "@kuestcom/builder-signing-sdk",
     "description": "Kuest SDK for creating builder headers",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/kuestcom/builder-signing-sdk.git"

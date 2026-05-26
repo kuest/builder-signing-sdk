@@ -19,7 +19,8 @@ export const buildHmacSignature = (
     requestPath: string,
     body?: string,
 ): string => {
-    let message = timestamp + method + requestPath;
+    const signingPath = requestPath.split("?")[0];
+    let message = timestamp + method + signingPath;
     if (body !== undefined) {
         message += body;
     }
