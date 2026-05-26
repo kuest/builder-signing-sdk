@@ -15,4 +15,23 @@ describe("hmac", () => {
         expect(signature.length).toBeGreaterThan(0);
         expect(signature).toBe("ZwAdJKvoYRlEKDkNMwd5BuwNNtg93kNaR_oU2HrfVvc=");
     });
+
+    it("excludes query parameters from the signing path", () => {
+        const pathSignature = buildHmacSignature(
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+            1000000,
+            "test-sign",
+            "/orders",
+            '{"hash": "0x123"}',
+        );
+        const querySignature = buildHmacSignature(
+            "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+            1000000,
+            "test-sign",
+            "/orders?market=condition",
+            '{"hash": "0x123"}',
+        );
+
+        expect(querySignature).toBe(pathSignature);
+    });
 });
