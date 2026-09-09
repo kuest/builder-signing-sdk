@@ -3,6 +3,7 @@ name: Release
 on:
     release:
         types: [published]
+    workflow_dispatch:
 
 jobs:
     publish:
@@ -29,4 +30,4 @@ jobs:
             - run: pnpm build
 
             - name: Publish to npm
-              run: pnpm publish --access public --provenance --no-git-checks
+              run: npm publish --access public --provenance
