@@ -1,14 +1,14 @@
 {
     "name": "@kuestcom/builder-signing-sdk",
     "description": "Kuest SDK for creating builder headers",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/kuestcom/builder-signing-sdk.git"
+        "url": "git+https://github.com/kuest/builder-signing-sdk.git"
     },
-    "homepage": "https://github.com/kuestcom/builder-signing-sdk",
+    "homepage": "https://github.com/kuest/builder-signing-sdk",
     "bugs": {
-        "url": "https://github.com/kuestcom/builder-signing-sdk/issues"
+        "url": "https://github.com/kuest/builder-signing-sdk/issues"
     },
     "contributors": [
         {
