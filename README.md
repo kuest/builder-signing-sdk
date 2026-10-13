@@ -6,13 +6,13 @@ A TypeScript SDK for creating authenticated builder headers
 ## Installation
 
 ```bash
-pnpm install @kuestcom/builder-signing-sdk
+pnpm install @kuest/builder-signing-sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { BuilderConfig } from '@kuestcom/builder-signing-sdk';
+import { BuilderConfig } from '@kuest/builder-signing-sdk';
 
 // Create a builder config for signing
 
