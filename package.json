@@ -1,7 +1,7 @@
 {
     "name": "@kuest/builder-signing-sdk",
     "description": "Kuest SDK for creating builder headers",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/kuest/builder-signing-sdk.git"
@@ -44,10 +44,10 @@
     },
     "devDependencies": {
         "@types/node": "^22.19.11",
-        "@vitest/coverage-v8": "^4.0.18",
+        "@vitest/coverage-v8": "^4.1.0",
         "dotenv": "^17.4.2",
         "typescript": "^6.0.2",
-        "vitest": "^4.0.18"
+        "vitest": "^4.1.0"
     },
     "pnpm": {
         "onlyBuiltDependencies": [
